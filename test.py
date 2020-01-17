@@ -27,33 +27,23 @@ async def on_ready():
     print("----------------")
     await client.change_presence(game=discord.Game(name='주문재고 전달', type=1))
 
-
-bot = commands.Bot(command_prefix='!')
-
-async def func_comeon(ctx):
-    voice = bot.voice_client_in(ctx.message.server)
-    if ctx.message.author.voice.voice_channel:
-        if voice:
-            if voice.channel != ctx.message.author.voice.voice_channel:
-                print('move to channel')
-                await voice.move_to(ctx.message.author.voice.voice_channel)
-        else:
-            print('join to channel')
-            voice = await bot.join_voice_channel(ctx.message.author.voice.voice_channel)
+    
+if message.content.startswith("!들어와"):
+    channel = message.author.voice.voice_channel
+    server = message.server
+    voice_client = client.voice_client_in(server)
+    print("들어와")
+    print(voice_client)
+    print("들어와")
+    if voice_client== None:
+        await client.send_message(message.channel, '들어왔습니다') # 호오.... 나를 부르는건가? 네녀석.. 각오는 되있겠지?
+        await client.join_voice_channel(channel)
     else:
-        await bot.say('where are you?')
-        print('stay...')
-    return voice
+        await client.send_message(message.channel, '봇이 이미 들어와있습니다.') # 응 이미 들어와있어 응쓰게싸
+    
+    
 
-@bot.command(pass_context=True)
-async def comeon(ctx):
-    await func_comeon(ctx)
 
-@bot.command(pass_context=True)    
-async def play(ctx):
-    voice = await func_comeon(ctx)
-    player = voice.create_ffmpeg_player('music.mp3')
-    player.start()
     
     
 access_token = os.environ["BOT_TOKEN"]
