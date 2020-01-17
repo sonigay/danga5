@@ -26,7 +26,10 @@ async def on_ready():
     print(client.user.id)
     print("----------------")
     await client.change_presence(game=discord.Game(name='주문재고 전달', type=1))
-
+    
+    
+@client.event    
+async def on_message(message):
 
     if message.content == '!명령어':
         command_list = ''
