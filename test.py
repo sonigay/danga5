@@ -27,14 +27,17 @@ async def on_ready():
     print("----------------")
     await client.change_presence(game=discord.Game(name='주문재고 전달', type=1))
 
-    
-if message.content.startswith("!들어와"):
-	channel = message.author.voice.voice_channel
-	server = message.server
-	voice_client = client.voice_client_in(server)
-	print("들어와")
-	print(voice_client)
-	print("들어와")
+
+@client.event
+async def on_message(message):
+	
+	if message.content.startswith("!들어와"):
+		channel = message.author.voice.voice_channel
+		server = message.server
+		voice_client = client.voice_client_in(server)
+		print("들어와")
+		print(voice_client)
+		print("들어와")
 		if voice_client== None:
 			await client.send_message(message.channel, '들어왔습니다') # 호오.... 나를 부르는건가? 네녀석.. 각오는 되있겠지?
 			await client.join_voice_channel(channel)
