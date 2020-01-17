@@ -41,8 +41,8 @@ async def on_message(message):
 		if voice_client== None:
 			await client.send_message(message.channel, '들어왔습니다') # 호오.... 나를 부르는건가? 네녀석.. 각오는 되있겠지?
 			await client.join_voice_channel(channel)
-	else:
-		await client.send_message(message.channel, '봇이 이미 들어와있습니다.') # 응 이미 들어와있어 응쓰게싸
+		else:
+			await client.send_message(message.channel, '봇이 이미 들어와있습니다.') # 응 이미 들어와있어 응쓰게싸
     
     
 
