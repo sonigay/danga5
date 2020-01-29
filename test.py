@@ -47,7 +47,8 @@ async def on_message(message):
         command_list += '!동판 재약정단독기존\n'     #!동판
         command_list += '!동판 재약정단독전환\n'     #!동판
         command_list += '!동판 단독\n'     #!동판
-        command_list += '!주문 [주문넣을 단말기및 요청글] 채널:재고신청봇 개인메시지\n'     #!동판
+        command_list += '!주문 [주문넣을 단말기]\n'     #!주문
+        command_list += '!정책표\n'     #!정책표
         command_list += '!단가 [모델명 요금제군 유형] 채널:무선정책조회\n'     #!동판
         command_list += '!단가 [모델명 요금제군 유형] 채널:외국인정책조회\n'     #!동판
         
