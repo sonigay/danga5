@@ -40,7 +40,7 @@ async def on_message(message):
         command_list += '!퀵비 [동단위/동단위]\n'     #!퀵비
         command_list += '!동판 동판\n'     #!동판
         command_list += '!동판 소호신규\n'     #!동판
-        command_list += '!동판 소호\n'     #!동판
+        command_list += '!동판 소호기변\n'     #!동판
         command_list += '!동판 후결합\n'     #!동판
         command_list += '!동판 재약정\n'     #!동판
         command_list += '!동판 재약정단독\n'     #!동판
