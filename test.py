@@ -47,9 +47,9 @@ async def on_message(message):
         command_list += '❕동판 재약정\n'     #!동판
         command_list += '❕동판 재약정단독\n'     #!동판
         command_list += '❕동판 단독\n'     #!동판
-        command_list += '❕주문 ex)!주문 N976 화이트 1대 보내주세요\n'     #!주문
-        command_list += '❕단가 ex)!단가 N976 A군 MNP 채널:무선정책조회\n'     #!동판
-        command_list += '❕단가 ex)!단가 N976 A군 MNP 채널:외국인정책조회\n'     #!동판
+        command_list += '❕주문 ex)❕주문 N976 화이트 1대 보내주세요\n'     #!주문
+        command_list += '❕단가 ex)❕단가 N976 A군 MNP 채널:무선정책조회\n'     #!동판
+        command_list += '❕단가 ex)❕단가 N976 A군 MNP 채널:외국인정책조회\n'     #!동판
         
         
         embed = discord.Embed(
