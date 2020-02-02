@@ -59,7 +59,7 @@ async def on_message(message):
             )
         embed.add_field(
             name=":radio: 업무외지원 명령어 ",
-            value= '```!주사위\n!복권\n```'
+            value= '```!주사위\n!복권\n!나이 ex)!나이 2002-02-01\n```'
             )
         await client.send_message(message.channel, embed=embed)
     
