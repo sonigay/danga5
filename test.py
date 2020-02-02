@@ -35,7 +35,7 @@ async def on_message(message):
         command_list = ''
         command_list += '!모델명\n'     #!모델명
         command_list += '!정책표\n'     #!정책표
-        command_list += '!공짜폰 ex)!공짜폰 군 MNP\n'     #!내국인꽁짜폰
+        command_list += '!공짜폰 ex)!공짜폰 C군 MNP\n'     #!내국인꽁짜폰
         command_list += '!외국인공짜폰 ex)!외국인공짜폰 A군 신규\n'     #!외국인꽁짜폰
         command_list += '!재고 모델명 ex)!재고 N976\n'     #!재고+모델명
         command_list += '!재고 [구단위] ex)!재고 남동구\n'     #!재고+구단위
