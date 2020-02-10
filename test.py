@@ -36,6 +36,7 @@ async def on_message(message):
         command_list += '!모델명\n'     #!모델명
         command_list += '!그레이드\n'     #!정책표
         command_list += '!정책표\n'     #!정책표
+        command_list += '\n'
         command_list += '!단가 모델명 요금제군 유형\n'     #!단가
         command_list += 'ex)!단가 N976 A군 MNP \n'     #!단가
         command_list += '\n'
@@ -54,8 +55,10 @@ async def on_message(message):
         command_list += '!재고 [구단위]\n'     #!재고+구단위
         command_list += 'ex)!재고 남동구\n'     #!재고+구단위
         command_list += '\n'
-        command_list += '!퀵비 [동단위/동단위]\n'     #!퀵비
+        command_list += '!퀵비 [동단위/동단위]  \n'     #!퀵비
         command_list += 'ex)!퀵비 논현동/가좌동\n'     #!퀵비
+        command_list += '퀵비 멍령어는 실행은 되지만\n'
+        command_list += '데이터량이 많아 다시 결과가 늦게 나옴\n'     #!퀵비
         command_list += '\n'
         command_list += '!동판 동판\n'     #!동판
         command_list += '!동판 소호신규\n'     #!동판
@@ -64,6 +67,7 @@ async def on_message(message):
         command_list += '!동판 재약정\n'     #!동판
         command_list += '!동판 재약정단독\n'     #!동판
         command_list += '!동판 단독\n'     #!동판
+        command_list += '\n'
         command_list += '!주문 주문내용\n'     #!주문
         command_list += 'ex)!주문 N976 화이트 1대 보내주세요\n'     #!주문
         command_list += '\n'
