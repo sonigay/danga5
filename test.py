@@ -44,7 +44,7 @@ async def on_message(message):
             )
         embed.add_field(
             name=":radio: ❗정책관련 명령어 ",
-            value= '```diff\n=- !정책표\n=- !그레이드\n+ !단가 모델명 요금제군 유형\n---< ex)!단가 N976 A군 MNP >\n+ !외국인단가 모델명 요금제군 유형\n---< ex)!외국인단가 N976 A군 MNP >\n+ !공짜폰 요금제군 유형\n---< ex)!공짜폰 C군 MNP >\n+ !외국인공짜폰 요금제군 유형\n---< ex)!외국인공짜폰 A군 신규 > ```',
+            value= '```diff\n- !정책표\n- !그레이드\n+ !단가 모델명 요금제군 유형\n---< ex)!단가 N976 A군 MNP >\n+ !외국인단가 모델명 요금제군 유형\n---< ex)!외국인단가 N976 A군 MNP >\n+ !공짜폰 요금제군 유형\n---< ex)!공짜폰 C군 MNP >\n+ !외국인공짜폰 요금제군 유형\n---< ex)!외국인공짜폰 A군 신규 > ```',
             inline = False            
             )
         embed.add_field(
@@ -59,7 +59,7 @@ async def on_message(message):
             )
         embed.add_field(
             name=":radio: ❗기타 명령어 ",
-            value= '```!영화순위\n\n!주사위\n\n!복권\n\n!나이 생년-월-일 \nex)!나이 2002-02-01\n\n!유지기간 개통일 \nex)!유지기간 2020-01-01\n\n!사다리 뽑을인원수 인원1 인원2 인원3...\nex)!사다리 2 홍길동 갑돌이 갑순이```',
+            value= '```diff\n= !영화순위\n\n= !주사위\n\n= !복권\n\n+ !나이 생년-월-일 \n---< ex)!나이 2002-02-01 >\n+ !유지기간 개통일\n---< ex)!유지기간 2020-01-01 >\n+ !사다리 뽑을인원수 인원1 인원2 인원3...\n---< ex)!사다리 2 홍길동 갑돌이 갑순이 >```',
             inline = True            
             )        
         await client.send_message(message.channel, embed=embed)
