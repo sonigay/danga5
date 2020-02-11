@@ -39,7 +39,7 @@ async def on_message(message):
         
         embed = discord.Embed(
             title = ":keyboard: ❕기본명령어",
-            description= '```' + command_list + '```',
+            description= '```fix\n' + command_list + '```',
             color=0xFFD5B4
             )
         embed.add_field(
