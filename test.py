@@ -35,11 +35,6 @@ async def on_message(message):
         command_list = ''
         command_list += '!명령어\n'     #!명령어        
         command_list += '!모델명\n'     #!모델명
-        command_list += '!퀵비 [동단위/동단위]  \n'     #!퀵비
-        command_list += 'ex)!퀵비 논현동/가좌동\n'     #!퀵비
-        command_list += '퀵비 멍령어는 실행은 되지만\n'
-        command_list += '데이터량이 많아 다소 결과가 늦게 나옴\n'     #!퀵비
-        command_list += '\n'
         command_list += '!동판 동판\n'     #!동판
         command_list += '!동판 소호신규\n'     #!동판
         command_list += '!동판 소호기변\n'     #!동판
@@ -65,7 +60,7 @@ async def on_message(message):
             )
         embed.add_field(
             name=":radio: ❗재고관련 명령어 ",
-            value= '```diff+!재고 모델명\n-ex)!재고 N976\n+!재고 [구단위]\n-ex)!재고 남동구\n ```',
+            value= '```diff\n+!재고 모델명\n-ex)!재고 N976\n+!재고 [구단위]\n-ex)!재고 남동구\n+!퀵비 [동단위/동단위]\n-ex)!퀵비 논현동/가좌동\n---퀵비 멍령어는 실행은 되지만\n데이터량이 많아 다소 결과가 늦게 나옴\n ```',
             inline = False            
             )
         embed.add_field(
