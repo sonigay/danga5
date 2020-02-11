@@ -38,27 +38,27 @@ async def on_message(message):
         
         
         embed = discord.Embed(
-            title = ":keyboard: ❕기본명령어",
+            title = ":keyboard: 기본명령어",
             description= '```fix\n' + command_list + '```',
             color=0xFFD5B4
             )
         embed.add_field(
-            name=":radio: ❗정책관련 명령어 ",
+            name="📶 정책관련 명령어 ",
             value= '```diff\n- !정책표\n- !그레이드\n+ !단가 모델명 요금제군 유형\n---< ex)!단가 N976 A군 MNP >\n+ !외국인단가 모델명 요금제군 유형\n---< ex)!외국인단가 N976 A군 MNP >\n+ !공짜폰 요금제군 유형\n---< ex)!공짜폰 C군 MNP >\n+ !외국인공짜폰 요금제군 유형\n---< ex)!외국인공짜폰 A군 신규 > ```',
             inline = False            
             )
         embed.add_field(
-            name=":radio: ❗재고관련 명령어 ",
+            name="📲 재고관련 명령어 ",
             value= '```diff\n- !주문\n---< ex)!주문 N976 화이트 1대 보내주세요 >\n+ !재고 모델명\n---< ex)!재고 N976 >\n+ !재고 [구단위]\n---< ex)!재고 남동구 >\n+ !퀵비 [동단위/동단위]\n---< ex)!퀵비 논현동/가좌동 >\n\n퀵비 멍령어는 실행은 되지만\n데이터량이 많아 다소 결과가 늦게 나옴 ```',
             inline = False            
             )
         embed.add_field(
-            name=":radio: ❗동판관련 명령어 ",
-            value= '```tex\n$ !동판 동판\n'+'& !동판 소호신규\n& !동판 소호기변\n& !동판 후결합\n& !동판 재약정\n& !동판 재약정단독\n& !동판 단독 ```',
+            name="🌐 동판관련 명령어 ",
+            value= '```Cs\n# !동판 동판\n'+'@ !동판 소호신규\n@ !동판 소호기변\n@ !동판 후결합\n@ !동판 재약정\n@ !동판 재약정단독\n@ !동판 단독\n\n ```',
             inline = True            
             )
         embed.add_field(
-            name=":radio: ❗기타 명령어 ",
+            name="🎲 기타 명령어 ",
             value= '```diff\n= !영화순위\n= !주사위\n= !복권\n+ !나이 생년-월-일 \n---< ex)!나이 2002-02-01 >\n+ !유지기간 개통일\n---< ex)!유지기간 2020-01-01 >\n+ !사다리 뽑을인원수 인원1 인원2 인원3...\n---< ex)!사다리 2 홍길동 갑돌이 갑순이 >```',
             inline = True            
             )        
