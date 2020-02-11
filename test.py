@@ -80,7 +80,10 @@ async def on_message(message):
             )
         embed.add_field(
             name=":radio: ❗업무외지원 명령어 ",
-            value= '```!영화순위\n!주사위\n!복권\n!나이 생년-월-일 \nex)!나이 2002-02-01\n!유지기간 개통일 \nex)!유지기간 2020-01-01\n!사다리 뽑을인원수 인원1 인원2 인원3...\nex)!사다리 2 홍길동 갑돌이 갑순이...\n```'
+            value= '```!영화순위\n
+            !주사위\n
+            !복권\n
+            !나이 생년-월-일 \nex)!나이 2002-02-01\n!유지기간 개통일 \nex)!유지기간 2020-01-01\n!사다리 뽑을인원수 인원1 인원2 인원3...\nex)!사다리 2 홍길동 갑돌이 갑순이...\n```'
             )
         await client.send_message(message.channel, embed=embed)
     
