@@ -77,6 +77,11 @@ async def on_message(message):
             color=0xFFD5B4
             )
         embed.add_field(
+            name="📈 실적관련 명령어 ",
+            value= '```diff\n- !전월실적\n---< 전월 전체실적 >\n+ !전월실적 영업사원이름\n---< ex)!전월실적 홍길동 >\n- !당월실적\n---< 데이터 입력일까지 당월 전체실적 >\n+ !당월실적 영업사원이름\n---< ex)!당월실적 홍길동 > ```',
+            inline = False            
+            )        
+        embed.add_field(
             name="📶 정책관련 명령어 ",
             value= '```diff\n- !정책표\n- !그레이드\n+ !단가 모델명 요금제군 유형\n---< ex)!단가 N976 A군 MNP >\n+ !외국인단가 모델명 요금제군 유형\n---< ex)!외국인단가 N976 A군 MNP >\n+ !공짜폰 요금제군 유형\n---< ex)!공짜폰 C군 MNP >\n+ !외국인공짜폰 요금제군 유형\n---< ex)!외국인공짜폰 A군 신규 > ```',
             inline = False            
